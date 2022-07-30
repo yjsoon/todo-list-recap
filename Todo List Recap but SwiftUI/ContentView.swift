@@ -9,15 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var todoItems = [
-        TodoItem(title: "Walk the cat"),
-        TodoItem(title: "Feed the cows"),
-        TodoItem(title: "Scam the class", isDone: true),
-    ]
+    @StateObject var todoManager = TodoManager()
     
     var body: some View {
         NavigationView {
-            List($todoItems) { $todoItem in
+            List($todoManager.todoItems) { $todoItem in
                 NavigationLink(destination: TodoDetailView(todoItem: $todoItem)) {
                     HStack {
                         Image(systemName: todoItem.isDone ? "checkmark.circle.fill" : "circle")

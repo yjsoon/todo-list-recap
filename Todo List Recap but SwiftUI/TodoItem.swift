@@ -7,10 +7,11 @@
 
 import Foundation
 
-struct TodoItem: Identifiable {
+struct TodoItem: Identifiable, Codable {
     
     var id = UUID()
     var title: String
     var isDone = false
     
 }
+
