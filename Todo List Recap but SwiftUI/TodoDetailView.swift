@@ -9,15 +9,22 @@ import SwiftUI
 
 struct TodoDetailView: View {
     
-    var todoItem: TodoItem
+    @Binding var todoItem: TodoItem
     
     var body: some View {
-        Text(todoItem.title)
+        Form {
+            TextField("Title of todo", text: $todoItem.title)
+            Section {
+                Button(todoItem.isDone ? "Mark as not done" : "Mark as done") {
+                    todoItem.isDone.toggle()
+                }
+            }
+        }
     }
 }
 
 struct TodoDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoDetailView(todoItem: TodoItem(title: "Sample todo item"))
+        TodoDetailView(todoItem: .constant(TodoItem(title: "Sample todo item")))
     }
 }
