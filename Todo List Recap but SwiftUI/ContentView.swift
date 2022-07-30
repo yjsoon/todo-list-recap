@@ -17,6 +17,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Todos", systemImage: "checkmark.circle.fill")
                 }
+            TodoStatsView(todoManager: todoManager)
+                .tabItem {
+                    Label("Stats", systemImage: "chart.xyaxis.line")
+                }
         }
     }
 }
