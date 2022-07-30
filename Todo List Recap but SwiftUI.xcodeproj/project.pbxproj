@@ -14,6 +14,7 @@
 		AFFD40DB2894C7E30026426F /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD40DA2894C7E30026426F /* TodoItem.swift */; };
 		AFFD40DD2894CC4B0026426F /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD40DC2894CC4B0026426F /* TodoDetailView.swift */; };
 		AFFD40DF2894D60B0026426F /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD40DE2894D60B0026426F /* TodoManager.swift */; };
+		AFFD40E12894D9AC0026426F /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD40E02894D9AC0026426F /* TodoListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		AFFD40DA2894C7E30026426F /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		AFFD40DC2894CC4B0026426F /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoDetailView.swift; path = "Todo List Recap but SwiftUI/TodoDetailView.swift"; sourceTree = "<group>"; };
 		AFFD40DE2894D60B0026426F /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoManager.swift; path = "Todo List Recap but SwiftUI/TodoManager.swift"; sourceTree = "<group>"; };
+		AFFD40E02894D9AC0026426F /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoListView.swift; path = "Todo List Recap but SwiftUI/TodoListView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		AFFD40C02894C6020026426F = {
 			isa = PBXGroup;
 			children = (
+				AFFD40E02894D9AC0026426F /* TodoListView.swift */,
 				AFFD40DE2894D60B0026426F /* TodoManager.swift */,
 				AFFD40DC2894CC4B0026426F /* TodoDetailView.swift */,
 				AFFD40CB2894C6020026426F /* Todo List Recap but SwiftUI */,
@@ -148,6 +151,7 @@
 			files = (
 				AFFD40DF2894D60B0026426F /* TodoManager.swift in Sources */,
 				AFFD40CF2894C6020026426F /* ContentView.swift in Sources */,
+				AFFD40E12894D9AC0026426F /* TodoListView.swift in Sources */,
 				AFFD40DB2894C7E30026426F /* TodoItem.swift in Sources */,
 				AFFD40CD2894C6020026426F /* Todo_List_Recap_but_SwiftUIApp.swift in Sources */,
 				AFFD40DD2894CC4B0026426F /* TodoDetailView.swift in Sources */,

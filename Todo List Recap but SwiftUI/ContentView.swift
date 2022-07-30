@@ -12,19 +12,11 @@ struct ContentView: View {
     @StateObject var todoManager = TodoManager()
     
     var body: some View {
-        NavigationView {
-            List($todoManager.todoItems) { $todoItem in
-                NavigationLink(destination: TodoDetailView(todoItem: $todoItem)) {
-                    HStack {
-                        Image(systemName: todoItem.isDone ? "checkmark.circle.fill" : "circle")
-                            .onTapGesture {
-                                todoItem.isDone.toggle()
-                            }
-                        Text(todoItem.title)
-                    }
+        TabView {
+            TodoListView(todoManager: todoManager)
+                .tabItem {
+                    Label("Todos", systemImage: "checkmark.circle.fill")
                 }
-            }
-            .navigationTitle("Todos")
         }
     }
 }
