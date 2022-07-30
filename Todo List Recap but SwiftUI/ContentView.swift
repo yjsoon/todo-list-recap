@@ -21,6 +21,9 @@ struct ContentView: View {
                 NavigationLink(destination: TodoDetailView(todoItem: $todoItem)) {
                     HStack {
                         Image(systemName: todoItem.isDone ? "checkmark.circle.fill" : "circle")
+                            .onTapGesture {
+                                todoItem.isDone.toggle()
+                            }
                         Text(todoItem.title)
                     }
                 }
