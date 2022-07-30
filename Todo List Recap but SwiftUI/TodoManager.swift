@@ -16,6 +16,10 @@ class TodoManager: ObservableObject {
         }
     }
     
+    var undoneTodos: [TodoItem] {
+        todoItems.filter { $0.isDone == false }
+    }
+    
     let sampleTodoItems: [TodoItem] =  [
         TodoItem(title: "Walk the cat"),
         TodoItem(title: "Feed the cows"),

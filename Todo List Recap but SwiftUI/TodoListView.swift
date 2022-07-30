@@ -13,14 +13,16 @@ struct TodoListView: View {
     
     var body: some View {
         NavigationView {
-            List($todoManager.todoItems) { $todoItem in
-                NavigationLink(destination: TodoDetailView(todoItem: $todoItem)) {
-                    HStack {
-                        Image(systemName: todoItem.isDone ? "checkmark.circle.fill" : "circle")
-                            .onTapGesture {
-                                todoItem.isDone.toggle()
-                            }
-                        Text(todoItem.title)
+            List {
+                ForEach($todoManager.todoItems) { $todoItem in
+                    NavigationLink(destination: TodoDetailView(todoItem: $todoItem)) {
+                        HStack {
+                            Image(systemName: todoItem.isDone ? "checkmark.circle.fill" : "circle")
+                                .onTapGesture {
+                                    todoItem.isDone.toggle()
+                                }
+                            Text(todoItem.title)
+                        }
                     }
                 }
             }

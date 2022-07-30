@@ -15,7 +15,7 @@ struct TodoStatsView: View {
         VStack {
             Text("You have \(todoManager.todoItems.count) total todos.")
                 .padding()
-            Text("You have \(todoManager.todoItems.filter { $0.isDone == false }.count ) todos left to do.")
+            Text("You have \(todoManager.undoneTodos.count ) todos left to do.")
         }
         
     }
