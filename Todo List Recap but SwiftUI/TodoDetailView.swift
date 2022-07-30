@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct TodoDetailView: View {
+    
+    var todoItem: TodoItem
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(todoItem.title)
     }
 }
 
 struct TodoDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoDetailView()
+        TodoDetailView(todoItem: TodoItem(title: "Sample todo item"))
     }
 }
