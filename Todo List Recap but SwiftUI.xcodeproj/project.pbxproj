@@ -12,6 +12,7 @@
 		AFFD40D12894C6030026426F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFD40D02894C6030026426F /* Assets.xcassets */; };
 		AFFD40D42894C6030026426F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFD40D32894C6030026426F /* Preview Assets.xcassets */; };
 		AFFD40DB2894C7E30026426F /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD40DA2894C7E30026426F /* TodoItem.swift */; };
+		AFFD40DD2894CC4B0026426F /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD40DC2894CC4B0026426F /* TodoDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		AFFD40D02894C6030026426F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFFD40D32894C6030026426F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFFD40DA2894C7E30026426F /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		AFFD40DC2894CC4B0026426F /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoDetailView.swift; path = "Todo List Recap but SwiftUI/TodoDetailView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		AFFD40C02894C6020026426F = {
 			isa = PBXGroup;
 			children = (
+				AFFD40DC2894CC4B0026426F /* TodoDetailView.swift */,
 				AFFD40CB2894C6020026426F /* Todo List Recap but SwiftUI */,
 				AFFD40CA2894C6020026426F /* Products */,
 			);
@@ -143,6 +146,7 @@
 				AFFD40CF2894C6020026426F /* ContentView.swift in Sources */,
 				AFFD40DB2894C7E30026426F /* TodoItem.swift in Sources */,
 				AFFD40CD2894C6020026426F /* Todo_List_Recap_but_SwiftUIApp.swift in Sources */,
+				AFFD40DD2894CC4B0026426F /* TodoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
