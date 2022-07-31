@@ -20,6 +20,11 @@ class TodoManager: ObservableObject {
         todoItems.filter { $0.isDone == false }
     }
     
+    var doneTodos: [TodoItem] {
+        todoItems.filter { $0.isDone }
+    }
+
+    
     let sampleTodoItems: [TodoItem] =  [
         TodoItem(title: "Walk the cat"),
         TodoItem(title: "Feed the cows"),
